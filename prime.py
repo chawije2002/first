@@ -16,6 +16,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+import pyrogram, os
+
+if __name__ == "__main__":
+    app = pyrogram.Client(
+        "bot",
+        bot_token=os.environ.get("TOKEN"),
+        api_id=int(os.environ.get("APP_ID")),
+        api_hash=os.environ.get("API_HASH"),
+    )
+    app.run()
+
 n1=int(input("enter number 1 :"))
 n2=int(input("enter number 2 :"))
 count=0
