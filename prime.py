@@ -21,9 +21,9 @@ import pyrogram, os
 if __name__ == "__main__":
     app = pyrogram.Client(
         "bot",
-        bot_token=os.environ.get("TOKEN"),
-        api_id=int(os.environ.get("APP_ID")),
-        api_hash=os.environ.get("API_HASH"),
+        bot_token=5112448264:AAFAFjHtCKrmOe93BORsbCtTFqXzaNUm3cs,
+        api_id=8835026,
+        api_hash=6e6d3b6dec997cf5c14d3012bf4149cc,
     )
     app.run()
 
